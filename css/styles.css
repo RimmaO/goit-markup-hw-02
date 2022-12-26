@@ -1,1 +1,73 @@
+/* КОЛЬОРИ ТЕКСТА */
+/* primary-text-color вкладки, заголовки  #2E2F42 */
+/* title-text-color тел та почта, параграфи  #434455 */
+/* footer-color подвал текст  #E7E9FC */
+/* accent-color акцент #FFFFFF;
+ */
 
+/* КОЛЬОРИ ФОНА */
+/* шапка #E7E9FC */
+/* кнопка #4D5AE5 */
+/* секція0 та подвал #2E2F42 */
+/* секція1-2 #E5E5E5 */
+/* секція3 #F4F4FD */
+
+:root {
+  --primary-text-color: #2e2f42;
+  --title-text-color: #434455;
+  --footer-color: #e7e9fc;
+  --accent-color: #ffffff;
+
+  --accent-bg-color: #4d5ae5;
+  --section0-futter-bg-color: #2e2f42;
+}
+
+body {
+  background-color: #fff;
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.web {
+  color: #4d5ae5;
+}
+
+.logo {
+  color: #2e2f42;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.adress-nav .link {
+  color: var(--title-text-color);
+}
+
+/* ГЕРОЙ */
+.hero-title {
+  color: var(--accent-color);
+  background-color: var(--section0-futter-bg-color);
+}
+/* СЕКЦІЇ */
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* ПЕРЕВАГИ */
+.title {
+  color: var(--primary-text-color);
+}
+.text {
+  color: var(--title-text-color);
+}
+
+/* КНОПКА */
+.button {
+  color: var(--accent-color);
+  background-color: var(accent-bg-color);
+}
