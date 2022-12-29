@@ -1,5 +1,38 @@
+/* <!--------------------HEAD: meta, title name, fonts, install css ----------------------> */
+/* ----------------------BODY: header, main (section0-3), footer---------------------------- */
+
 body {
   font-family: "roboto", sans-serif;
+}
+
+:root {
+  --accent-color: #4d5ae5;
+  --hover-focus-color: #404bbf;
+  --title-logo-link-color: #2e2f42;
+  --team-work-caption-color: #2e2f42;
+  --text-contacts-color: #434455;
+  --hero-title-btn-color: #ffffff;
+  --footer-logo-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+
+  --hero-footer-bgc: #2e2f42;
+  --hero-btn-bgc: #4d5ae5;
+  --team-bgc: #f4f4fd;
+  --team-list-item-bgc: #ffffff;
+  --filter-item-bgc: #f4f4fd;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .list {
@@ -9,10 +42,40 @@ body {
   text-decoration: none;
 }
 
-/* Шапка сайта */
+a:hover,
+a:focus {
+  color: var(--hover-focus-color);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-logo-link-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-contacts-color);
+}
+/* ----------------------Header: logo, navigation, adress----------------------------- */
 .header {
 }
 .header-navigation {
+}
+.header-logo-accent {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
 }
 .header-logo {
   font-family: "raleway", sans-serif;
@@ -23,18 +86,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-}
-.header-accent {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--title-logo-link-color);
 }
 
 .header-list {
@@ -46,91 +98,116 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--title-logo-link-color);
 }
 
-/* Посилання на адресу ел пошти та телефон */
 .header-contacts {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-contacts-color);
 }
 
-/* Основна частина */
+/* --------------------- Main: section0 hero, button ----------------------------- */
 
-/* Секція0*/
-/* Герой */
-/* Кнопка */
 .hero {
+  background-color: var(--hero-footer-bgc);
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
-
-  background: #2e2f42;
+  color: var(--hero-title-btn-color);
 }
 .hero-btn {
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--hero-title-btn-color);
 
-  background: #4d5ae5;
+  background-color: var(--hero-btn-bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-/* Секція1 */
+/* ---------------------Main: section1 (Our Features)-------------------------- */
+.features {
+}
+.features-caption {
+}
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
-
-.section-list {
+.features-list {
 }
-.section-title {
+/* .features-title,
+.team-title,
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.section-text {
+.features-text,
+.team-text,
+.portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+} */
+/* ---------------------Main: section2 What are we doing -------------------------- */
+.work {
 }
-/* Секція2 */
-.section-caption {
+.work-caption,
+.team-caption {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--team-work-caption-color);
 }
-/* Секція3 */
+.work-list {
+}
 
-/* Подвал */
+/* ---------------------Main: section3 Our Team -------------------------- */
+.team {
+  background-color: var(--team-bgc);
+}
+.team-caption {
+}
+.team-list {
+}
+.team-list-item {
+  background-color: var(--team-list-item-bgc);
+}
+.team-title {
+}
+.team-text {
+}
+
+/* ---------------------Footer: logo, text -------------------------- */
 .footer {
+  background-color: var(--hero-footer-bgc);
+}
+.footer-logo-accent {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
 }
 .footer-logo {
   font-family: "raleway", sans-serif;
@@ -141,25 +218,44 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  background: #2e2f42;
-}
-.footer-accent {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-  background: #2e2f42;
+  color: var(--footer-logo-color);
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
-  background: #2e2f42;
+  color: var(--footer-text-color);
+}
+
+/* ----------------------------second page PORTFOLIO---------------------------------------- */
+
+/* ---------------------Main: section (Filter, Our Portfolio)-----------------------------*/
+
+.filter-list {
+}
+.filter-item {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: var(--filter-item-bgc);
+
+  cursor: pointer;
+}
+
+.portfolio-caption {
+}
+.visually-hidden {
+}
+.portfolio-list {
+}
+.portfolio-title {
+}
+.portfolio-text {
 }
