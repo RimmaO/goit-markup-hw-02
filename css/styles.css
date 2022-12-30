@@ -42,11 +42,6 @@ body {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: var(--hover-focus-color);
-}
-
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -64,8 +59,7 @@ a:focus {
 /* ----------------------Header: logo, navigation, adress----------------------------- */
 .header {
 }
-.header-navigation {
-}
+
 .header-logo-accent {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -88,6 +82,14 @@ a:focus {
   text-transform: uppercase;
   color: var(--title-logo-link-color);
 }
+.header-logo:hover,
+.header-logo {
+  color: var(--hover-focus-color);
+}
+.header-logo-accent:hover,
+.header-logo-accent:focus {
+  color: var(--hover-focus-color);
+}
 
 .header-list {
 }
@@ -100,7 +102,10 @@ a:focus {
   letter-spacing: 0.02em;
   color: var(--title-logo-link-color);
 }
-
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-focus-color);
+}
 .header-contacts {
   font-style: normal;
   font-size: 16px;
@@ -132,11 +137,14 @@ a:focus {
   letter-spacing: 0.04em;
   color: var(--hero-title-btn-color);
 
-  background-color: var(--hero-btn-bgc);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+  cursor: pointer;
 
+  background-color: var(--hero-btn-bgc);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--hover-focus-color);
+}
 /* ---------------------Main: section1 (Our Features)-------------------------- */
 .features {
 }
@@ -248,7 +256,10 @@ a:focus {
 
   cursor: pointer;
 }
-
+.filter-item:hover,
+.filter-item:focus {
+  color: var(--hover-focus-color);
+}
 .portfolio-caption {
 }
 .visually-hidden {
