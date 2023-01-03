@@ -3,6 +3,7 @@
 
 body {
   font-family: "roboto", sans-serif;
+  color: var(--text-contacts-color);
 }
 
 :root {
@@ -54,7 +55,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-contacts-color);
 }
 /* ----------------------Header: logo, navigation, adress----------------------------- */
 .header {
@@ -106,12 +106,15 @@ body {
 .header-link:focus {
   color: var(--hover-focus-color);
 }
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--hover-focus-color);
+}
 .header-contacts {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-contacts-color);
 }
 
 /* --------------------- Main: section0 hero, button ----------------------------- */
