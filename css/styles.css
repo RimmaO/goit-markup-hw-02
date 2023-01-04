@@ -72,6 +72,7 @@ body {
   color: var(--accent-color);
 }
 .header-logo {
+  color: var(--title-logo-link-color);
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -80,10 +81,9 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-logo-link-color);
 }
 .header-logo:hover,
-.header-logo {
+.header-logo:focus {
   color: var(--hover-focus-color);
 }
 .header-logo-accent:hover,
@@ -111,6 +111,7 @@ body {
   color: var(--hover-focus-color);
 }
 .header-contacts {
+  color: var(--text-contacts-color);
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
